@@ -43,8 +43,9 @@ const CepSearch = () => {
 
   return (
     <div className="cep-search-container">
-      <h1 className="text-primary">Busca CEP</h1>
+      
       <div className="container search-container">
+      <h1 className="text-primaryyy">Encontre um perfil Github</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-container">
             <input
@@ -52,16 +53,19 @@ const CepSearch = () => {
               name="cep"
               value={formData.cep}
               className="search-input"
-              placeholder="CEP (somente números)"
+              placeholder="Usuário Github"
               onChange={handleChange}
             />
             <button type="submit" className="btn btn-primary search-button">
-              Buscar
+              Encontrar
             </button>
           </div>
         </form>
 
-        {address && (
+       
+      </div>
+      <div className="container cardembaixo">
+      {address && (
           <>
             <ResultCard title="Logradouro" description={address.logradouro} />
             <ResultCard title="Localidade" description={address.localidade} />

@@ -3,6 +3,13 @@
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  
+}
+
+.text-primaryyy{
+  font-size: 38px;
+  color: #262626;
+
 }
 
 .cep-search-container h1 {
@@ -14,27 +21,29 @@
 .search-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   padding: 30px 40px;
-  background-color: #f6f6f6;
-  border-radius: 5px;
+  background-color: #E6F7FF;
+  border-radius: 16px;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .search-input {
   background-color: #fff;
-  border: 1px solid #8c8c8c;
+  border: 1px solid #D9D9D9;
   border-radius: 4px;
   font-size: 16px;
-  text-align: center;
+  text-align:start;
   height: 40px;
   width: 240px;
   margin-bottom: 25px;
+  padding-left: 10px;
+ 
 }
 
 .search-input::placeholder {
@@ -46,6 +55,12 @@
   width: 160px;
   margin-bottom: 35px;
   color: #fff;
+
+  
+}
+
+.cardembaixo{
+margin-top: 30px;
 }
 
 

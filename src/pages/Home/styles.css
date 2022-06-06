@@ -1,7 +1,19 @@
 .home-container {
-    padding: 40px;
+  padding: 40px;
 }
 
 .start-button {
-    color: #fff;
+  color: #fff;
+}
+
+.titulo h1 {
+  font-size: 48px;
+}
+
+.subtitulo h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #7E7E7E;
 }
