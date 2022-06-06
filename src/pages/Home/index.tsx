@@ -13,7 +13,7 @@ const Home = () => {
           <h1>Bootcamp Spring React - DevSuperior</h1>
         </div>
       </div>
-      <Link to="/githubsearch">
+      <Link to="/GitSearch">
         <button className="btn btn-primary btn-lg start-button">Começar</button>
       </Link>
     </div>

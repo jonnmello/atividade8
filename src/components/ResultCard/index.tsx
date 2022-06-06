@@ -1,18 +1,42 @@
+import { Profile } from 'types/profile';
 import './styles.css';
 
 type Props = {
-    title: string;
-    description: string;
-}
+  profile: Profile;
+};
 
-const ResultCard = ( { title, description} : Props) => {
+const ResultCard = ({ profile }: Props) => {
+  return (
+    <div className="container profile-container">
+      <div className="profile-container-top">
+        <img src={profile?.avatar_url} alt={profile?.name} />
+      </div>
 
-    return (
-        <div className="result-container">
-            <h3 className="result-title">{title}</h3>
-            <p className="result-description">{description}</p>
+      <div className="row profile-container-bottom">
+        <h2>Informações</h2>
+
+        <div className="col-12">
+          <span>Perfil: </span>
+          {profile?.url}
         </div>
-    );
-}
+        <div className="col-12">
+          <span>Seguidores: </span>
+          {profile?.followers}
+        </div>
+
+        <div className="col-12">
+          {' '}
+          <span>Localidade: </span>
+          {profile?.location}
+        </div>
+        <div className="col-12">
+          {' '}
+          <span>Nome: </span>
+          {profile?.name}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ResultCard;
